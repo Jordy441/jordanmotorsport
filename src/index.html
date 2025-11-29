@@ -1,174 +1,145 @@
 <!doctype html>
 <html lang="en">
 <head>
-    
-<header aria-label="Primary">
-  <!-- Underlined logo -->
-  <div class="logo">
-    <u>
-      <img src="mjwrlogo1.jpg" 
-           alt="MJWR">
-    </u>
-  </div>
-</header>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Performance, precision, and strategy for motorsport teams worldwide.">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter/400.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-      </head>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MJWR Motorsport Engineering & Management Consultancy</title>
+  <meta name="description" content="Delivering performance, precision, and strategy through race engineering, operations, and commercial management." />
+  <link rel="preload" href="assets/logo-mjwr.svg" as="image">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-  <!-- Skip link for accessibility -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" aria-label="Primary">
-    <nav class="nav" role="navigation">
-      <a class="logo" href="#home" aria-label="MJWR Motorsport home">
-        <img src="mjrwlogo1.jpg" alt="MJWR Motorsport logo">
-        <span>MJWR</span>
+  <header class="site-header" role="banner">
+    <div class="brand-banner">
+      <img src="assets/logo-mjwr.svg" alt="MJWR Motorsport Engineering & Management Consultancy" class="brand-logo" />
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
-      <div id="nav-menu" class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#team">Team</a>
-        <a href="#contact" class="cta">Contact</a>
+    <section id="home" class="hero" aria-label="Motorsport Engineering & Management Consultancy">
+      <div class="hero-content">
+        <h1>Motorsport Engineering & Management Consultancy</h1>
+        <p>Delivering performance, precision, and strategy through race engineering, operations, and commercial management.</p>
+        <a class="btn btn-primary" href="#services">Explore services</a>
       </div>
-    </nav>
+    </section>
   </header>
 
   <main id="main">
-    <section id="home" class="hero" aria-label="Hero">
-      <div class="wrap">
-        <h1>Motorsport Engineering & Management Consultancy</h1>
-        <p>Delivering performance, precision, and strategy through race engineering, operations, and commercial management.</p>
-        <a class="btn" href="#services">Explore services</a>
-      </div>
-    </section>
-
-    <section id="services" class="section" aria-labelledby="services-title">
-      <div class="wrap">
-        <h2 id="services-title">Our expertise</h2>
-        <div class="grid">
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Our expertise</h2>
+        <div class="cards">
           <article class="card">
             <h3>Race engineering</h3>
-            <p class="muted">Setup, simulation, data analysis, CFD design, and performance optimization across test and race operations.</p>
+            <p>Setup, simulation, data analysis, CFD design, and performance optimization across test and race operations.</p>
           </article>
           <article class="card">
             <h3>Operations</h3>
-            <p class="muted">Event logistics, spares management, pit lane readiness, and reliability processes.</p>
+            <p>Event logistics, spares management, pit lane readiness, and reliability processes.</p>
           </article>
           <article class="card">
             <h3>Management</h3>
-            <p class="muted">Sponsorship, partnerships, commercial strategy, and stakeholder reporting.</p>
+            <p>Sponsorship, partnerships, commercial strategy, and stakeholder reporting.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section case" aria-labelledby="case-title">
-      <div class="wrap">
-        <h2 id="case-title">Recent projects</h2>
-        <div class="grid">
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Recent projects</h2>
+        <div class="cards">
           <article class="card">
             <h3>LMP2 setup evolution</h3>
-            <p class="muted">Reduced tire degradation by 12% and improved stint pace by 0.28s/lap via damper maps and aero balance review.</p>
+            <p>Reduced tire degradation by 12% and improved stint pace by 0.28s/lap via damper maps and aero balance review.</p>
           </article>
           <article class="card">
             <h3>Endurance ops uplift</h3>
-            <p class="muted">Cut pit cycle variance 35% with spares workflows, tooling audits, and standardized comms.</p>
+            <p>Cut pit cycle variance 35% with spares workflows, tooling audits, and standardized comms.</p>
           </article>
           <article class="card">
             <h3>Partner ROI model</h3>
-            <p class="muted">Built sponsor dashboard aligning media value and hospitality conversion to race calendar.</p>
+            <p>Built sponsor dashboard aligning media value and hospitality conversion to race calendar.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="team" class="section team" aria-labelledby="team-title">
-      <div class="wrap">
-        <h2 id="team-title">Team</h2>
-        <div class="grid">
-          <article class="card member">
-            <img src="mjrwlogo3.jpg" alt="Portrait of Jordan Wright" loading="eager">
-            <div>
-              <strong>Jordan Wright</strong><br>
-              <span class="muted small"><strong>CEO</strong><br>
-                Jordan specalises in Aerodynamics. 20 years in motorsport; 8 years in Formula 1 with Red Bull F1. CFD lead for multiple championship-winning cars.
-                Structural chassis and suspension design and analysis. Hands-on pit crew for LMP1 and LMP2.
-                Business and promotion setup for new companies. Experience across UK, Australia, Germany, and Taiwan.
-              </span>
-            </div>
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Team</h2>
+        <div class="team-grid">
+          <article class="member">
+            <img src="assets/team-jordan.jpg" alt="Portrait of Jordan Wright" class="avatar" />
+            <h3>Jordan Wright</h3>
+            <p class="role">CEO</p>
+            <p>Specialises in aerodynamics. 20 years in motorsport; 8 years in Formula 1 with Red Bull F1. CFD lead for multiple championship-winning cars. Structural chassis & suspension design and analysis. Hands-on pit crew for LMP1 & LMP2. Experience across UK, Australia, Germany, and Taiwan.</p>
           </article>
-
-          <article class="card member">
-            <img src="https://raw.githubusercontent.com/Jordy441/mjwr1/main/josh.jpg" alt="Portrait of Josh Chang" loading="fast">
-            <div>
-              <strong>Josh Chang</strong><br>
-              <span class="muted small"><strong>Senior Engineer & Consultant</strong><br>
-                25 years of engineering experience in F1, Moto GP, LMP1 WRC, and Rally Raid. Expert in vehicle dynamics and suspension design.
-                PhD in torque vectoring. Experience across USA, UK, and Taiwan. Josh has extensive hands-on race engineering experience in WRC and Rally Raid, 
-                including multiple Dakar Rally campaigns. His technical expertise spans vehicle dynamics, suspension design, and performance optimization.
-              </span>
-            </div>
+          <article class="member">
+            <img src="assets/team-josh.jpg" alt="Portrait of Josh Chang" class="avatar" />
+            <h3>Josh Chang</h3>
+            <p class="role">Senior Engineer & Consultant</p>
+            <p>25 years of engineering experience in F1, MotoGP, LMP1, WRC, and Rally Raid. Expert in vehicle dynamics and suspension design. PhD in torque vectoring. Extensive hands-on race engineering in WRC & Dakar Rally campaigns.</p>
           </article>
-
-          <article class="card member">
-            <img src="https://raw.githubusercontent.com/Jordy441/mjwr1/main/alan.jpg" alt="Portrait of Alan Jackson" loading="lazy">
-            <div>
-              <strong>Alan Jackson</strong><br>
-              <span class="muted small"><strong>Commercial Lead — PR & Sponsorships</strong><br>
-                Mechanical background from service in The British Army. Key networker with 20 years connected to the BRDC. Alan has a 
-                strong mechanical background developed during his service in The British Army, where he honed his technical skills and leadership abilities. He is 
-                a key networker with two decades of connections to the British Racing Drivers' Club (BRDC), leveraging these relationships to secure 
-                sponsorships and partnerships that drive commercial success for motorsport teams.
-              </span>
-            </div>
+          <article class="member">
+            <img src="assets/team-alan.jpg" alt="Portrait of Alan Jackson" class="avatar" />
+            <h3>Alan Jackson</h3>
+            <p class="role">Commercial Lead — PR & Sponsorships</p>
+            <p>Mechanical background from service in The British Army. Key networker with two decades connected to the BRDC, securing sponsorships and partnerships to drive commercial success.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 id="contact-title">Contact</h2>
-        <form action="https://formspree.io/f/your-id" method="post">
-          <label class="sr-only" for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
-          <label class="sr-only" for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Your email" required>
-          <label class="sr-only" for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
-          <button class="btn" type="submit">Send message</button>
-          <p class="small muted">By submitting, you agree to be contacted regarding our services.</p>
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-disclaimer">By submitting, you agree to be contacted regarding our services.</p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" aria-label="Footer">
-    <div class="wrap small muted">
-      © 2025 MJWR Motorsport Engineering & Management Consultancy
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 MJWR Motorsport Engineering & Management Consultancy</p>
     </div>
   </footer>
 
   <script>
-    // Accessible mobile nav toggle
+    // Accessible nav toggle
     const toggle = document.querySelector('.nav-toggle');
-    const menu = document.querySelector('#nav-menu');
-    if (toggle && menu) {
-      toggle.addEventListener('click', () => {
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        menu.classList.toggle('open');
-      });
-    }
-      </script>
-
-    </body>
-
+    const navList = document.getElementById('nav-list');
+    toggle?.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      navList.classList.toggle('is-open');
+    });
+  </script>
+</body>
 </html>
