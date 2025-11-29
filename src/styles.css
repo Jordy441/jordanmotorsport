@@ -81,16 +81,6 @@ input, textarea { padding:12px; border:1px solid #e5e7eb; border-radius:8px; fon
 /* Footer */
 .site-footer { background:#f8fafc }
 
-/* Responsive nav */
-@media (max-width: 760px) {
-  .nav-toggle { display:block }
-  .nav-links { display:none; flex-direction:column; gap:12px; width:100% }
-  .nav-links.open { display:flex }
-  .logo img {
-  width: clamp(20px, 30vw, 100px);
-  height:auto;
-}
-
-}
-
-
+.logo img {
+  max-width:200%; /* scales with container */
+  height:auto;}
