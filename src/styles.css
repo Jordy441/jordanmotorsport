@@ -13,9 +13,7 @@ body {
   background-image: url('mjwr1logo.jpeg'); /* Replace with actual path */
   background-repeat: repeat;
   background-position: center;
-  background-size: 200px; /* Adjust size as needed */
-  opacity: 0.05; /* Makes watermark subtle */
-  z-index: -1;
+  background-size: 50px; /* Adjust size as needed */
 }
 
 
