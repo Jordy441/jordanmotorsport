@@ -87,8 +87,10 @@ input, textarea { padding:12px; border:1px solid #e5e7eb; border-radius:8px; fon
   .nav-links { display:none; flex-direction:column; gap:12px; width:100% }
   .nav-links.open { display:flex }
   .logo img {
-  width: clamp(20px, 30vw, 500px);
+  width: clamp(20px, 30vw, 100px);
   height:auto;
 }
 
 }
+
+
