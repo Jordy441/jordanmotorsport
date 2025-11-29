@@ -54,7 +54,7 @@ body {
 
 .brand-logo {
   width: 100%;
-  max-height: 84px;         /* logo height */
+  max-height: 50px;         /* logo height */
   object-fit: contain;
 }
 
