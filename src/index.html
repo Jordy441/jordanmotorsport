@@ -1,100 +1,189 @@
 <!doctype html>
 <html lang="en">
-<head>
+      <head>
+    
+<header aria-label="Primary">
+  <!-- Underlined logo -->
+  <div class="logo">
+    <u>
+      <img src="https://raw.githubusercontent.com/Jordy441/mjwr1/main/mjwrlogo1.jpg" 
+           alt="MJWR Motorsport logo">
+    </u>
+  </div>
+</header>
+
+
+
+
+
+
+
+
   <meta charset="utf-8">
   <title>MJWR Motorsport Engineering & Management Consultancy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Performance, precision, and strategy for motorsport teams worldwide.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter/400.css" rel="stylesheet">
   <style>
     :root {
       --brand:#0d1b2a; --accent:#ef5f6b; --text:#1f2937; --muted:#6b7280; --bg:#f4f5f7;
       --max:1100px;
     }
-    body {margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--text)}
-    .wrap{max-width:var(--max);margin:0 auto;padding:56px 20px}
-    .nav{display:flex;align-items:center;gap:24px;padding:14px 20px}
-    .logo img{height:150px;width:auto;border-bottom:3px solid var(--accent)}
-    .nav a{color:var(--text);font-weight:600;text-decoration:none}
+    
+    .nav{display:flex;align-items:center;gap:24px;max-width:var(--max);margin:0 auto;padding:14px 20px}
+    .logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--brand)}
+    .logo img{height:250px;width:auto}
+    .nav a{color:var(--text);font-weight:600}
     .cta{margin-left:auto;padding:10px 16px;border:2px solid var(--accent);border-radius:8px}
-    .hero{background:linear-gradient(120deg,#0d1b2a,#1b263b);color:#fff;text-align:center}
+    .hero{background:linear-gradient(120deg,#0d1b2a,#1b263b);color:#fff}
+    .wrap{max-width:var(--max);margin:0 auto;padding:56px 20px}
     .hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 8px}
+    .hero p{color:#e5e7eb;max-width:760px}
     .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 16px;border-radius:8px;margin-top:18px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
     .card{border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff}
     h2{font-size:clamp(22px,3vw,30px);margin:22px 0}
     .muted{color:var(--muted)}
-    footer{background:#f8fafc;padding:20px;text-align:center}
+    .section{border-top:1px solid #f1f5f9}
+    .case .card h3{margin:0 0 8px}
+    .team .member{display:flex;gap:14px;align-items:top}
+    .member img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #e5e7eb}
+    form{display:grid;gap:12px;max-width:640px}
+    input,textarea{padding:12px;border:1px solid #e5e7eb;border-radius:8px;font:inherit}
+    footer{background:#f8fafc}
     .small{font-size:14px}
-    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
-               </style>
-           </head>
-         <body>
-                   <header>
-              <nav class="nav" aria-label="Primary">
-            <a class="logo" href="#home" aria-label="MJWR Motorsport home">
-        <img src="https://raw.githubusercontent.com/Jordy441/mjwr1/main/mjwrlogo1.jpg" alt="MJWR Motorsport Engineering & Management Consultancy logo">
+    /* Accessibility helpers */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+          </style>
+      </head>
+<body>
+  <header aria-label="Primary">
+    <nav class="nav" role="navigation">
+      <a class="logo" href="#home" aria-label="MJWR Motorsport home">
+        
+        MJWR 
       </a>
       <a href="#services">Services</a>
       <a href="#case-studies">Projects</a>
       <a href="#team">Team</a>
       <a href="#contact" class="cta">Contact</a>
+    
     </nav>
   </header>
 
   <main id="home">
-    <section class="hero">
+    <section class="hero" aria-label="Hero">
       <div class="wrap">
-        <h1>Motorsport Engineering & Management Consultancy</h1>
+        <h1> MJWR Motorsport Engineering & Management Consultancy</h1>
         <p>Delivering performance, precision, and strategy through race engineering, operations, and commercial management.</p>
         <a class="btn" href="#services">Explore services</a>
       </div>
     </section>
 
-    <section id="services" class="wrap">
-      <h2>Our expertise</h2>
-      <div class="grid">
-        <article class="card"><h3>Race engineering</h3><p class="muted">Setup, simulation, CFD design, and performance optimization.</p></article>
-        <article class="card"><h3>Operations</h3><p class="muted">Event logistics, spares management, pit lane readiness.</p></article>
-        <article class="card"><h3>Management</h3><p class="muted">Sponsorship, partnerships, commercial strategy.</p></article>
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="wrap">
+        <h2 id="services-title">Our expertise</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Race engineering</h3>
+            <p class="muted">Setup, simulation, data analysis, CFD Design and performance optimization across test and race operations.</p>
+          </article>
+          <article class="card">
+            <h3>Operations</h3>
+            <p class="muted">Event logistics, spares management, pit lane readiness, and reliability processes.</p>
+          </article>
+          <article class="card">
+            <h3>Management</h3>
+            <p class="muted">Sponsorship, partnerships, commercial strategy, and stakeholder reporting.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="case-studies" class="wrap">
-      <h2>Recent Projects</h2>
-      <div class="grid">
-        <article class="card"><h3>LMP2 setup evolution</h3><p class="muted">Reduced tire degradation by 12% and improved stint pace.</p></article>
-        <article class="card"><h3>Endurance ops uplift</h3><p class="muted">Cut pit cycle variance 35% with tooling audits.</p></article>
-        <article class="card"><h3>Partner ROI model</h3><p class="muted">Built sponsor dashboard aligning media value to race calendar.</p></article>
+    <section id="case-studies" class="section case" aria-labelledby="case-title">
+      <div class="wrap">
+        <h2 id="case-title">Recent Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>LMP2 setup evolution</h3>
+            <p class="muted">Reduced tire degradation by 12% and improved stint pace by 0.28s/lap via damper maps and aero balance review.</p>
+          </article>
+          <article class="card">
+            <h3>Endurance ops uplift</h3>
+            <p class="muted">Cut pit cycle variance 35% with spares workflows, tooling audits, and standardized comms.</p>
+          </article>
+          <article class="card">
+            <h3>Partner ROI model</h3>
+            <p class="muted">Built sponsor ORACLE dashboard aligning media value and hospitality conversion to race calendar.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="team" class="wrap">
-      <h2>Team</h2>
-      <div class="grid">
-        <article class="card"><h3>Jordan Wright — CEO</h3><ul><li>CFD specialist, 26 years in motorsport</li><li>10 years in F1 (Red Bull, Williams)</li><li>Hands-on pit crew LMP1/LMP2</li></ul></article>
-        <article class="card"><h3>Josh Chang — Senior Engineer</h3><ul><li>25 years engineering across F1, WRC, Rally Raid</li><li>PhD in Torque Vectoring</li><li>Expert in vehicle dynamics</li></ul></article>
-        <article class="card"><h3>Alan Jackson — Commercial Lead</h3><ul><li>Mechanical background, British Army</li><li>20 years networking with BRDC</li></ul></article>
+    <section id="team" class="section team" aria-labelledby="team-title">
+      <div class="wrap">
+        <h2 id="team-title">Team</h2>
+        <div class="grid">
+          <div class="card member">
+            
+            <div>
+              <strong>Jordan Wright</strong><br>
+              <span class="muted small"><strong>Managing Director </strong><br> Jordan specalises in CFD. 20 years experience in Motorsport. 
+                 10 years in Formula 1 with Red Bull and Williams.  Expert in
+                Structurial chassis and Suspension Design and analysis. "Hands on work"
+                 in Pit crew for LMP1 and LMP2. Business and promotion setup for new Companies. Engineering Design and
+                  Manufacturing stretch from UK, Australia, Germany and Taiwan.   </span>
+            </div>
+          </div>
+          
+          <div class="card member">
+          
+            <div>
+              <strong>Josh Chang</strong><br>
+              <span class="muted small"> <strong>Senior Engineer & Consultant</strong><br>Josh has 25 years of Engineering experience 
+                in various motorsport series, including F1, WRC, MotoGP and most recently, Rally Raid.  
+                Expert in vehicle dynamics and suspension design. PHD in Torque Vectoring. 
+                Josh has vast experience in design, manufacturing and hands on race engineering.
+                His skills in all aspects of Engineering Design and Manufacturing stretch from USA, UK and Taiwan.</span>
+        </div>
       </div>
+      <div class="card member">
+         
+            <div>
+              <strong>Alan Jackson</strong><br>
+              <span class="muted small"><strong>Commercial Lead — PR & sponsorships</strong><br> 
+                Alan has vast Mechanical knowledge, having served with The British Army. He has vast hands on mechanical 
+                experience, having worked on everything from Land Rovers to Challenger 2 tanks.  
+                Alan is vital for Networking through many influential contacts that he has gained in Motorsport over 20 years with the BRDC. 
+              </span>
+            </div>
+          </div>
     </section>
 
-    <section id="contact" class="wrap">
-      <h2>Contact</h2>
-      <form action="https://formspree.io/f/your-id" method="post">
-        <label class="sr-only" for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" required>
-        <label class="sr-only" for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="Your email" required>
-        <label class="sr-only" for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
-        <button class="btn" type="submit">Send message</button>
-        <p class="small muted">By submitting, you agree to be contacted regarding our services.</p>
-      </form>
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Contact</h2>
+        <form action="https://formspree.io/f/your-id" method="post">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required>
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+          <p class="small muted">By submitting, you agree to be contacted regarding our services.</p>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p class="small muted">© 2025 MJWR Motorsport Engineering & Management Consultancy</p>
+  <footer aria-label="Footer">
+    <div class="wrap small muted">
+      © 2025 MJWR Motorsport Engineering & Management Consultancy
+    </div>
   </footer>
 </body>
 </html>
+
+
