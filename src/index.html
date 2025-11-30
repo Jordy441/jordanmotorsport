@@ -1,159 +1,100 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Motorsport Consultant | MJWR Motorsport Engineering</title>
-  <meta name="description" content="Motorsport engineering and management consultancy: CFD, chassis & suspension design, and race operations support." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" role="banner">
-    <div class="brand-bar">
-      <a class="logo" href="/" aria-label="MJWR Motorsport Engineering Home">
-        <!-- Replace with your SVG or PNG -->
-        <img src="mjrwlogo1.jpg" alt="MJWR Motorsport Engineering" width="200" height="48" />
+  <meta charset="utf-8">
+  <title>MJWR Motorsport Engineering & Management Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Performance, precision, and strategy for motorsport teams worldwide.">
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter/400.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand:#0d1b2a; --accent:#ef5f6b; --text:#1f2937; --muted:#6b7280; --bg:#f4f5f7;
+      --max:1100px;
+    }
+    body {margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:56px 20px}
+    .nav{display:flex;align-items:center;gap:24px;padding:14px 20px}
+    .logo img{height:150px;width:auto;border-bottom:3px solid var(--accent)}
+    .nav a{color:var(--text);font-weight:600;text-decoration:none}
+    .cta{margin-left:auto;padding:10px 16px;border:2px solid var(--accent);border-radius:8px}
+    .hero{background:linear-gradient(120deg,#0d1b2a,#1b263b);color:#fff;text-align:center}
+    .hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 8px}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 16px;border-radius:8px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:18px;background:#fff}
+    h2{font-size:clamp(22px,3vw,30px);margin:22px 0}
+    .muted{color:var(--muted)}
+    footer{background:#f8fafc;padding:20px;text-align:center}
+    .small{font-size:14px}
+    .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+               </style>
+           </head>
+         <body>
+                   <header>
+              <nav class="nav" aria-label="Primary">
+            <a class="logo" href="#home" aria-label="MJWR Motorsport home">
+        <img src="https://raw.githubusercontent.com/Jordy441/mjwr1/main/mjwrlogo1.jpg" alt="MJWR Motorsport Engineering & Management Consultancy logo">
       </a>
-
-      <nav class="primary-nav" aria-label="Primary">
-        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-        <ul id="menu" class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#clients">Clients</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact" class="button button--primary">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <section class="hero" aria-label="Hero">
-      <div class="hero-content">
-        <h1>Performance-driven motorsport consultancy</h1>
-        <p>CFD expertise, chassis and suspension design, and hands-on race operations for teams across LMP and F1.</p>
-        <div class="hero-actions">
-          <a href="#services" class="button button--primary">Explore services</a>
-          <a href="#contact" class="button button--ghost">Start a project</a>
-        </div>
-      </div>
-    </section>
+      <a href="#services">Services</a>
+      <a href="#case-studies">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
   </header>
 
-  <main id="main">
-    <section id="services" class="section section--light">
-      <div class="container">
-        <h2>Services</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>CFD aerodynamics</h3>
-            <p>Flow simulations, aero surfaces optimization, and performance correlation with track data.</p>
-          </article>
-          <article class="card">
-            <h3>Chassis & suspension</h3>
-            <p>Structural design, kinematics, and setup recommendations for LMP and single-seater platforms.</p>
-          </article>
-          <article class="card">
-            <h3>Race operations</h3>
-            <p>Pit crew support, procedures, and event logistics to execute reliably under pressure.</p>
-          </article>
-          <article class="card">
-            <h3>Program management</h3>
-            <p>Technical leadership, supplier coordination, and build schedules from concept to track.</p>
-          </article>
-        </div>
+  <main id="home">
+    <section class="hero">
+      <div class="wrap">
+        <h1>Motorsport Engineering & Management Consultancy</h1>
+        <p>Delivering performance, precision, and strategy through race engineering, operations, and commercial management.</p>
+        <a class="btn" href="#services">Explore services</a>
       </div>
     </section>
 
-    <section id="clients" class="section">
-      <div class="container">
-        <h2>Trusted by teams worldwide</h2>
-        <ul class="logo-grid" aria-label="Client logos">
-          <!-- Replace placeholders with your logos -->
-          <li><img src="assets/client-1.png" alt="Client 1" width="160" height="80" /></li>
-          <li><img src="assets/client-2.png" alt="Client 2" width="160" height="80" /></li>
-          <li><img src="assets/client-3.png" alt="Client 3" width="160" height="80" /></li>
-          <li><img src="assets/client-4.png" alt="Client 4" width="160" height="80" /></li>
-        </ul>
+    <section id="services" class="wrap">
+      <h2>Our expertise</h2>
+      <div class="grid">
+        <article class="card"><h3>Race engineering</h3><p class="muted">Setup, simulation, CFD design, and performance optimization.</p></article>
+        <article class="card"><h3>Operations</h3><p class="muted">Event logistics, spares management, pit lane readiness.</p></article>
+        <article class="card"><h3>Management</h3><p class="muted">Sponsorship, partnerships, commercial strategy.</p></article>
       </div>
     </section>
 
-    <section id="about" class="section section--light">
-      <div class="container">
-        <div class="split">
-          <div>
-            <h2>About</h2>
-            <p>Led by globally experienced engineers with programs spanning the UK, Europe, and APAC, we blend deep technical rigor with practical track-side execution.</p>
-            <p>We partner with teams to meet tight timelines, deliver measurable gains, and build reliable processes that perform under race conditions.</p>
-          </div>
-          <aside class="profile">
-            <img class="avatar" src="assets/profile.jpg" alt="Principal consultant portrait" width="160" height="160" />
-            <ul class="list">
-              <li><strong>Expertise:</strong> CFD, structural design, pit crew ops</li>
-              <li><strong>Focus:</strong> LMP1/LMP2, single-seaters, prototyping</li>
-              <li><strong>Approach:</strong> Data-led, hands-on, collaborative</li>
-            </ul>
-          </aside>
-        </div>
+    <section id="case-studies" class="wrap">
+      <h2>Recent Projects</h2>
+      <div class="grid">
+        <article class="card"><h3>LMP2 setup evolution</h3><p class="muted">Reduced tire degradation by 12% and improved stint pace.</p></article>
+        <article class="card"><h3>Endurance ops uplift</h3><p class="muted">Cut pit cycle variance 35% with tooling audits.</p></article>
+        <article class="card"><h3>Partner ROI model</h3><p class="muted">Built sponsor dashboard aligning media value to race calendar.</p></article>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <form class="contact-form" action="#" method="post" aria-describedby="contact-help">
-          <p id="contact-help">We respond within 1–2 business days.</p>
-
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-          </div>
-
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-          </div>
-
-          <div class="form-field">
-            <label for="message">Project details</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-          </div>
-
-          <button type="submit" class="button button--primary">Send enquiry</button>
-        </form>
+    <section id="team" class="wrap">
+      <h2>Team</h2>
+      <div class="grid">
+        <article class="card"><h3>Jordan Wright — CEO</h3><ul><li>CFD specialist, 26 years in motorsport</li><li>10 years in F1 (Red Bull, Williams)</li><li>Hands-on pit crew LMP1/LMP2</li></ul></article>
+        <article class="card"><h3>Josh Chang — Senior Engineer</h3><ul><li>25 years engineering across F1, WRC, Rally Raid</li><li>PhD in Torque Vectoring</li><li>Expert in vehicle dynamics</li></ul></article>
+        <article class="card"><h3>Alan Jackson — Commercial Lead</h3><ul><li>Mechanical background, British Army</li><li>20 years networking with BRDC</li></ul></article>
       </div>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/your-id" method="post">
+        <label class="sr-only" for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required>
+        <label class="sr-only" for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+        <p class="small muted">By submitting, you agree to be contacted regarding our services.</p>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> MJWR Motorsport Engineering & Management Consultancy. All rights reserved.</p>
-      <ul class="footer-links">
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+  <footer>
+    <p class="small muted">© 2025 MJWR Motorsport Engineering & Management Consultancy</p>
   </footer>
-
-  <script>
-    // Simple year update
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Accessible nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('menu');
-    if (toggle) {
-      toggle.addEventListener('click', () => {
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!expanded));
-        menu.classList.toggle('nav-list--open', !expanded);
-      });
-    }
-  </script>
 </body>
 </html>
