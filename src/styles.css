@@ -33,7 +33,7 @@
     .member img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #ecedf0}
     form{display:grid;gap:12px;max-width:640px}
     input,textarea{padding:12px;border:1px solid #153067;border-radius:8px;font:inherit}
-    footer{background:#030c15}
+    footer{background:#f2f4f6}
     .small{font-size:14px}
     /* Accessibility helpers */
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
