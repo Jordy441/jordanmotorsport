@@ -26,11 +26,11 @@ body {
     .logo img{height:200px;width:auto}
     .nav a{color:var(--text);font-weight:600}
     .cta{margin-left:auto;padding:10px 16px;border:2px solid var(--accent);border-radius:8px}
-    .hero{background:linear-gradient(120deg,#2275cd,#0a1d41);color:#f9f7f7}
+    .hero{background:linear-gradient(120deg,#ea2e2e,#010712);color:#f9f7f7}
     .wrap{max-width:var(--max);margin:0 auto;padding:40px 20px}
     .hero h1{font-size:clamp(30px,4vw,44px);margin:0 0 8px}
     .hero p{color:#f8f9fc;max-width:760px}
-    .btn{display:inline-block;background:var(--accent);color:#000000;padding:12px 16px;border-radius:8px;margin-top:18px}
+    .btn{display:inline-block;background:var(--accent);color:#582b7f;padding:12px 16px;border-radius:8px;margin-top:18px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
     .card{border:1px solid #e5e7eb;border-radius:12px;padding:15px;background:#ccf8eb}
     h2{font-size:clamp(30px,3vw,30px);margin:22px 0}
@@ -40,7 +40,7 @@ body {
     .team .member{display:flex;gap:14px;align-items:top}
     .member img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #ecedf0}
     form{display:grid;gap:12px;max-width:640px}
-    input,textarea{padding:12px;border:1px solid #153067;border-radius:8px;font:inherit}
+    input,textarea{padding:12px;border:1px solid #e65b0b;border-radius:8px;font:inherit}
     footer{background:#f2f4f6}
     .small{font-size:14px}
     /* Accessibility helpers */
