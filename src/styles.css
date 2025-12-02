@@ -8,6 +8,14 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Target the logo image */
+.logo img {
+  width: 100%;        /* stretches across the container */
+  height: auto;       /* keeps proportions */
+  display: block;     /* removes inline spacing */
+  opacity: 0.5;         /* ensures full opacity */
+}
+
      
      
      
@@ -20,6 +28,12 @@ body {
       --brand:#1f6aba; --accent:#ec2939; --text:#ebe1e1; --muted:#3d63af; --bg:#eff0f3;
       --max:1100px;
     }
+
+    
+
+
+
+
     
     .nav{display:flex;align-items:center;gap:24px;max-width:var(--max);margin:0 auto;padding:14px 20px}
     .logo{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--brand)}
