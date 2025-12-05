@@ -8,13 +8,24 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+
+
 /* Target the logo image */
 .logo img {
   width: 100%;        /* stretches across the container */
   height: auto;       /* keeps proportions */
   display: block;     /* removes inline spacing */
-  opacity: 0.7;         /* ensures full opacity */
+  opacity: 0.9;         /* ensures full opacity */
 }
+
+.logo img {
+  border-radius: 90%;   /* makes it perfectly circular */
+  width: 150px;         /* adjust size as needed */
+  height: 150px;        /* keep equal width/height for circle */
+  object-fit: cover;    /* ensures the image fills the circle neatly */
+}
+
+
 
      
      
